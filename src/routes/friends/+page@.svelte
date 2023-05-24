@@ -6,9 +6,9 @@
 	// import light from '$lib/images/light-s.svg';
 
 	axios
-		.post('https://localhost:10443/api/friends')
+		.get('http://localhost:5173/api/friends')
 		.then((data) => {
-			console.log(data.data);
+			console.log(data);
 		})
 		.catch((error) => {
 			console.error(error);
